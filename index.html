@@ -1,16 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Testing1
-    Testing2
-    Testing3
-    Testing4
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    Tommy aime les gougouttes
+  <title>Paugy Yannis — BTS SIO</title>
+  <meta name="description" content="Site professionnel réalisé dans le cadre du BTS SIO." />
+
+  <!-- CSS (à ajouter plus tard) -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+
+  
+  <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div>
+      <a href="index.html">Paugy Yannis</a>
+    </div>
+
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="pages/profil.html">Profil</a></li>
+        <li><a href="pages/competences.html">Compétences</a></li>
+        <li><a href="pages/projets.html">Projets</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section>
+      <h1>Paugy Yannis</h1>
+      <p>Étudiant en BTS SIO — SISR</p>
+
+      <div>
+        <a href="pages/projets.html">Voir mes projets</a>
+        <a href="pages/contact.html">Me contacter</a>
+      </div>
+    </section>
+
+    <!-- ===== PRÉSENTATION ===== -->
+    <section>
+      <h2>Présentation</h2>
+      <p>
+        Présente-toi ici : ton parcours, ton intérêt pour l’informatique,
+        ton objectif professionnel, etc.
+      </p>
+    </section>
+
+    <!-- ===== COMPÉTENCES (aperçu) ===== -->
+    <section>
+      <h2>Compétences principales</h2>
+
+      <ul>
+        <li>Développement web</li>
+        <li>Systèmes et réseaux</li>
+        <li>Bases de données</li>
+        <li>Cybersécurité</li>
+      </ul>
+
+      <a href="pages/competences.html">Voir toutes mes compétences</a>
+    </section>
+
+    <!-- ===== PROJETS (aperçu) ===== -->
+    <section>
+      <h2>Projets</h2>
+
+      <article>
+        <h3>Nom du projet</h3>
+        <p>Courte description du projet.</p>
+      </article>
+
+      <article>
+        <h3>Nom du projet</h3>
+        <p>Courte description du projet.</p>
+      </article>
+
+      <a href="pages/projets.html">Voir tous les projets</a>
+    </section>
+
+    <!-- ===== BTS SIO ===== -->
+    <section>
+      <h2>BTS SIO</h2>
+      <p>
+        Explique ici ce qu’est le BTS SIO, ton option (SISR ou SLAM)
+        et ce que tu y apprends.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© <span id="year"></span> Paugy Yannis</p>
+    <p>Site réalisé dans le cadre du BTS SIO</p>
+  </footer>
+
+  <!-- JS minimal -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
