@@ -244,6 +244,16 @@ footer {
   margin-top: 14px;
 }
 
+.projects-list{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.project-card{
+  margin-top: 0; /* le gap gère l’espacement */
+}
+
+
 /* Le bloc visuel */
 .project-card article {
   background: rgba(248, 250, 252, 0.95);
