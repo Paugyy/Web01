@@ -7,11 +7,8 @@
   <title>Paugy Yannis — BTS SIO</title>
   <meta name="description" content="Site professionnel réalisé dans le cadre du BTS SIO." />
 
-  <!-- CSS (à ajouter plus tard) -->
-  <link rel="stylesheet" href="css/style3.css">
-
-  
-  <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style3.css">
 </head>
 
 <body>
@@ -37,13 +34,13 @@
   <main>
 
     <!-- ===== HERO ===== -->
-    <section>
+    <section class="hero">
       <h1>Paugy Yannis</h1>
       <p>Étudiant en BTS SIO — SISR</p>
 
-      <div>
-        <a href="pages/projets.html">Voir mes projets</a>
-        <a href="pages/contact.html">Me contacter</a>
+      <div class="hero-actions">
+        <a class="btn" href="pages/projets.html">Voir mes projets</a>
+        <a class="btn" href="pages/contact.html">Me contacter</a>
       </div>
     </section>
 
@@ -60,36 +57,47 @@
     <section>
       <h2>Compétences principales</h2>
 
-      <ul>
+      <ul class="bullets">
         <li>Développement web</li>
         <li>Systèmes et réseaux</li>
         <li>Bases de données</li>
         <li>Cybersécurité</li>
       </ul>
 
-      <a href="pages/competences.html">Voir toutes mes compétences</a>
+      <a class="simple-link" href="pages/competences.html">Voir toutes mes compétences</a>
     </section>
 
     <!-- ===== PROJETS (aperçu) ===== -->
-
     <section class="projects-section">
       <h2>Projets</h2>
 
       <div class="projects-list">
         <a href="pages/projets.html" class="project-card">
+          <article>
             <h3>Nom du projet</h3>
             <p>Courte description du projet.</p>
-          </a>
+          </article>
+        </a>
 
         <a href="pages/projets.html" class="project-card">
+          <article>
             <h3>Nom du projet</h3>
             <p>Courte description du projet.</p>
+          </article>
         </a>
       </div>
 
       <a href="pages/projets.html" class="see-more">Voir tous les projets</a>
     </section>
 
+    <!-- ===== BTS SIO ===== -->
+    <section>
+      <h2>BTS SIO</h2>
+      <p>
+        Explique ici ce qu’est le BTS SIO, ton option (SISR ou SLAM)
+        et ce que tu y apprends.
+      </p>
+    </section>
 
   </main>
 
@@ -99,7 +107,6 @@
     <p>Site réalisé dans le cadre du BTS SIO</p>
   </footer>
 
-  <!-- JS minimal -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
