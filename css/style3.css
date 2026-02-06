@@ -330,5 +330,12 @@ footer {
   outline-offset: 3px;
 }
 
+/* Force la section Projets en colonne */
+main section:nth-of-type(3) a.project-card {
+  display: block !important;
+  width: 100% !important;
+}
+
+
 
 
