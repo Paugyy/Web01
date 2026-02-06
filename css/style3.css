@@ -281,6 +281,21 @@ p {
   outline-offset: 3px;
 }
 
+/* Empêche les boutons de prendre la couleur de lien au hover */
+.btn:hover,
+.see-more:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Et au cas où : garde la couleur blanche même sans hover */
+.btn,
+.see-more {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
 /* ===============================
    Footer
 ================================ */
