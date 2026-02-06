@@ -183,11 +183,7 @@ article h3 {
 }
 
 /* ===============================
-   Projets (colonne garantie)
-   -> HTML conseillé :
-   <section class="projects-section">
-     <div class="projects-list"> ... </div>
-   </section>
+   Projets (COLONNE GARANTIE)
 ================================ */
 .projects-section {
   display: flex;
@@ -200,9 +196,10 @@ article h3 {
   gap: 14px;
 }
 
-/* Carte projet cliquable */
+/* Le lien englobe toute la carte */
 .project-card {
   display: block;
+  width: 100%;
   color: inherit;
 }
 
