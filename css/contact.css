@@ -52,3 +52,55 @@
     grid-template-columns: 1.4fr 1fr;
   }
 }
+
+/* ===============================
+   Bouton envoyer
+================================ */
+
+.btn-submit {
+  margin-top: 8px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  border: none;
+
+  background: linear-gradient(
+    135deg,
+    var(--accent),
+    var(--accent-hover)
+  );
+
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+
+  box-shadow:
+    0 10px 24px rgba(37, 99, 235, 0.35);
+
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    filter 160ms ease;
+}
+
+/* Hover */
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 16px 36px rgba(37, 99, 235, 0.45);
+  filter: brightness(1.05);
+}
+
+/* Click */
+.btn-submit:active {
+  transform: translateY(0);
+  box-shadow:
+    0 6px 16px rgba(37, 99, 235, 0.25);
+}
+
+/* Focus clavier (important BTS) */
+.btn-submit:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.4);
+  outline-offset: 3px;
+}
+
