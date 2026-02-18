@@ -211,3 +211,21 @@ footer{
   nav a{ width:100%; text-align:center; }
   .hero-actions{ flex-direction:column; }
 }
+
+/* SUPPRESSION TOTALE ET FORCÉE DES SOULIGNEMENTS */
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  text-decoration: none !important;
+  text-underline-offset: 0 !important;
+}
+
+/* Cas spécifique des cartes projets */
+.project-card,
+.project-card *,
+.project-card:hover,
+.project-card:visited {
+  text-decoration: none !important;
+}
