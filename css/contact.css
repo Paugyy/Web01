@@ -54,53 +54,57 @@
 }
 
 /* ===============================
-   Bouton envoyer
+   Bouton premium contact
 ================================ */
 
 .btn-submit {
-  margin-top: 8px;
-  padding: 12px 18px;
-  border-radius: 14px;
-  border: none;
+  margin-top: 12px;
+  padding: 14px 22px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 
   background: linear-gradient(
     135deg,
-    var(--accent),
-    var(--accent-hover)
+    rgba(37, 99, 235, 0.95),
+    rgba(30, 64, 175, 0.95)
   );
 
-  color: #ffffff;
+  color: white;
   font-weight: 600;
   font-size: 15px;
+  letter-spacing: 0.3px;
+
   cursor: pointer;
 
+  backdrop-filter: blur(6px);
+
   box-shadow:
-    0 10px 24px rgba(37, 99, 235, 0.35);
+    0 8px 20px rgba(37, 99, 235, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   transition:
-    transform 160ms ease,
-    box-shadow 160ms ease,
-    filter 160ms ease;
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.2s ease;
 }
 
 /* Hover */
 .btn-submit:hover {
   transform: translateY(-2px);
   box-shadow:
-    0 16px 36px rgba(37, 99, 235, 0.45);
-  filter: brightness(1.05);
+    0 14px 32px rgba(37, 99, 235, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 /* Click */
 .btn-submit:active {
   transform: translateY(0);
   box-shadow:
-    0 6px 16px rgba(37, 99, 235, 0.25);
+    0 6px 14px rgba(37, 99, 235, 0.25);
 }
 
-/* Focus clavier (important BTS) */
+/* Focus clavier */
 .btn-submit:focus-visible {
-  outline: 3px solid rgba(37, 99, 235, 0.4);
-  outline-offset: 3px;
+  outline: 3px solid rgba(37, 99, 235, 0.35);
+  outline-offset: 4px;
 }
-
