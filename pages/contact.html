@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Nom Prénom</title>
+  <meta name="description" content="Me contacter (BTS SIO)." />
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+  <header>
+    <div><a href="../index.html">Nom Prénom</a></div>
+
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page contact">
+    <section class="hero">
+      <h1>Contact</h1>
+      <p>Tu peux me contacter via ce formulaire (ou ajouter un mail/LinkedIn).</p>
+    </section>
+
+    <section class="contact-grid">
+      <article class="card">
+        <h2>Formulaire</h2>
+        <form class="form" action="#" method="post">
+          <label for="name">Nom</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button class="btn" type="submit">Envoyer</button>
+          <p class="muted">Pour l’instant, le formulaire est statique (on pourra le rendre fonctionnel plus tard).</p>
+        </form>
+      </article>
+
+      <article class="card">
+        <h2>Infos</h2>
+        <ul class="infos">
+          <li><strong>Email :</strong> tonmail@example.com</li>
+          <li><strong>LinkedIn :</strong> à ajouter</li>
+          <li><strong>GitHub :</strong> Paugyy</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nom Prénom — BTS SIO</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
