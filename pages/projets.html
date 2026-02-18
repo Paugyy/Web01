@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projets — Nom Prénom</title>
+  <meta name="description" content="Mes projets (BTS SIO) : contexte, objectifs, technos, résultats." />
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/projets.css">
+</head>
+
+<body>
+  <header>
+    <div><a href="../index.html">Nom Prénom</a></div>
+
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="projets.html" aria-current="page">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page projets">
+    <section class="hero">
+      <h1>Projets</h1>
+      <p>Une sélection de projets avec objectifs, technologies et résultats.</p>
+    </section>
+
+    <section class="projects-grid">
+      <a class="project-card" href="#">
+        <article>
+          <h2>Projet 1 — Titre</h2>
+          <p>Contexte, objectif, technos. (Lien vers une future page détail)</p>
+          <ul class="meta">
+            <li>Technos : HTML/CSS</li>
+            <li>Année : 2026</li>
+          </ul>
+        </article>
+      </a>
+
+      <a class="project-card" href="#">
+        <article>
+          <h2>Projet 2 — Titre</h2>
+          <p>Décris ce que tu as fait + ce que tu as appris.</p>
+          <ul class="meta">
+            <li>Technos : Docker / Apache</li>
+            <li>Année : 2026</li>
+          </ul>
+        </article>
+      </a>
+
+      <a class="project-card" href="#">
+        <article>
+          <h2>Projet 3 — Titre</h2>
+          <p>Ajoute des résultats mesurables si possible.</p>
+          <ul class="meta">
+            <li>Technos : GitHub Pages</li>
+            <li>Année : 2026</li>
+          </ul>
+        </article>
+      </a>
+    </section>
+
+    <section class="note">
+      <h2>Comment je présente mes projets</h2>
+      <ul>
+        <li>Contexte & besoin</li>
+        <li>Objectifs</li>
+        <li>Technologies</li>
+        <li>Étapes / difficultés</li>
+        <li>Résultat final</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nom Prénom — BTS SIO</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
