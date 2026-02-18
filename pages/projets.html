@@ -1,107 +1,73 @@
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projets — Nom Prénom</title>
-  <meta name="description" content="Mes projets (BTS SIO) : contexte, objectifs, technos, résultats." />
+<main class="page projets">
+  <section class="hero">
+    <h1>Projets</h1>
+    <p>Une sélection de projets avec objectifs, technologies et résultats.</p>
+  </section>
 
-  <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="../css/projets.css">
-</head>
+  <section class="project-group">
+    <h2>Projet en entreprise</h2>
 
-<body>
-  <header>
-    <div><a href="../index.html">Nom Prénom</a></div>
+    <div class="projects-grid">
+      <a class="project-card" href="#">
+        <article>
+          <h3>Projet 1 — Titre</h3>
+          <p>Ajoute des résultats mesurables si possible.</p>
+          <ul class="meta">
+            <li>Technos : GitHub Pages</li>
+            <li>Année : 2026</li>
+          </ul>
+        </article>
+      </a>
 
-    <nav aria-label="Navigation principale">
-      <ul>
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="profil.html">Profil</a></li>
-        <li><a href="competences.html">Compétences</a></li>
-        <li><a href="projets.html" aria-current="page">Projets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      <a class="project-card" href="#">
+        <article>
+          <h3>Projet 2 — Titre</h3>
+          <p>Ajoute des résultats mesurables si possible.</p>
+          <ul class="meta">
+            <li>Technos : GitHub Pages</li>
+            <li>Année : 2026</li>
+          </ul>
+        </article>
+      </a>
+    </div>
+  </section>
 
-  <main class="page projets">
-    <section class="hero">
-      <h1>Projets</h1>
-      <p>Une sélection de projets avec objectifs, technologies et résultats.</p>
-    </section>
+  <section class="project-group">
+    <h2>Projet à l’école / perso</h2>
 
-    <section>    
-      <section class="projects-grid">
-        <h2>Projet en Entreprise</h2>
-        <br>
-        <a class="project-card" href="#">
-          <article>
-            <h2>Projet 4 — Titre</h2>
-            <p>Ajoute des résultats mesurables si possible.</p>
-            <ul class="meta">
-              <li>Technos : GitHub Pages</li>
-              <li>Année : 2026</li>
-            </ul>
-          </article>
-        </a>
-        <br>
-        <a class="project-card" href="#">
-          <article>
-            <h2>Projet 2 — Titre</h2>
-            <p>Ajoute des résultats mesurables si possible.</p>
-            <ul class="meta">
-              <li>Technos : GitHub Pages</li>
-              <li>Année : 2026</li>
-            </ul>
-          </article>
-        </a>
-    </section>
-      <br>
-    <section>
-      <h2>Projet à l'école / Perso</h2>
-        <br>
-        <a class="project-card" href="#">
-          <article>
-            <h2>Projet 3 — Titre</h2>
-            <p>Ajoute des résultats mesurables si possible.</p>
-            <ul class="meta">
-              <li>Technos : GitHub Pages</li>
-              <li>Année : 2026</li>
-            </ul>
-          </article>
-        </a>
-        <br>
-        <a class="project-card" href="#">
-          <article>
-            <h2>Projet 4 — Titre</h2>
-            <p>Ajoute des résultats mesurables si possible.</p>
-            <ul class="meta">
-              <li>Technos : GitHub Pages</li>
-              <li>Année : 2026</li>
-            </ul>
-          </article>
-        </a>
-    </section>
-    <br> 
-    <section class="note">
-      <h2>Comment je présente mes projets</h2>
-      <ul>
-        <li>Contexte & besoin</li>
-        <li>Objectifs</li>
-        <li>Technologies</li>
-        <li>Étapes / difficultés</li>
-        <li>Résultat final</li>
-      </ul>
-    </section>
-  </main>
+    <div class="projects-grid">
+      <a class="project-card" href="#">
+        <article>
+          <h3>Projet 3 — Titre</h3>
+          <p>Ajoute des résultats mesurables si possible.</p>
+          <ul class="meta">
+            <li>Technos : GitHub Pages</li>
+            <li>Année : 2026</li>
+          </ul>
+        </article>
+      </a>
 
-  <footer>
-    <p>© <span id="year"></span> Nom Prénom — BTS SIO</p>
-  </footer>
+      <a class="project-card" href="#">
+        <article>
+          <h3>Projet 4 — Titre</h3>
+          <p>Ajoute des résultats mesurables si possible.</p>
+          <ul class="meta">
+            <li>Technos : GitHub Pages</li>
+            <li>Année : 2026</li>
+          </ul>
+        </article>
+      </a>
+    </div>
+  </section>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+  <section class="note">
+    <h2>Comment je présente mes projets</h2>
+    <ul>
+      <li>Contexte & besoin</li>
+      <li>Objectifs</li>
+      <li>Technologies</li>
+      <li>Étapes / difficultés</li>
+      <li>Résultat final</li>
+    </ul>
+  </section>
+</main>
