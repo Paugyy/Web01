@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compétences — Nom Prénom</title>
+  <meta name="description" content="Compétences techniques et outils (BTS SIO)." />
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/competences.css">
+</head>
+
+<body>
+  <header>
+    <div><a href="../index.html">Nom Prénom</a></div>
+
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="competences.html" aria-current="page">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page competences">
+    <section class="hero">
+      <h1>Compétences</h1>
+      <p>Vue d’ensemble de mes compétences et outils (BTS SIO).</p>
+    </section>
+
+    <section class="skills-grid">
+      <article class="skill-card">
+        <h2>Développement</h2>
+        <ul class="tags">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>SQL</li>
+        </ul>
+        <div class="levels">
+          <div class="level"><span>HTML</span><div class="bar" style="--w: 80%"></div></div>
+          <div class="level"><span>CSS</span><div class="bar" style="--w: 70%"></div></div>
+          <div class="level"><span>JS</span><div class="bar" style="--w: 55%"></div></div>
+          <div class="level"><span>SQL</span><div class="bar" style="--w: 60%"></div></div>
+        </div>
+      </article>
+
+      <article class="skill-card">
+        <h2>Systèmes & Réseaux</h2>
+        <ul class="tags">
+          <li>Linux</li><li>Docker</li><li>Apache</li><li>IP / DNS</li>
+        </ul>
+        <div class="levels">
+          <div class="level"><span>Linux</span><div class="bar" style="--w: 70%"></div></div>
+          <div class="level"><span>Docker</span><div class="bar" style="--w: 60%"></div></div>
+          <div class="level"><span>Apache</span><div class="bar" style="--w: 55%"></div></div>
+        </div>
+      </article>
+
+      <article class="skill-card">
+        <h2>Outils</h2>
+        <ul class="tags">
+          <li>Git / GitHub</li><li>VS Code</li><li>Windows</li><li>Debian</li>
+        </ul>
+        <p class="muted">Ajoute ici tes outils et ton niveau.</p>
+      </article>
+
+      <article class="skill-card">
+        <h2>Soft skills</h2>
+        <ul class="tags">
+          <li>Autonomie</li><li>Rigueur</li><li>Communication</li><li>Organisation</li>
+        </ul>
+        <p class="muted">Quelques exemples concrets (projet, stage, travail d’équipe).</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nom Prénom — BTS SIO</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
