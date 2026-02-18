@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil — Nom Prénom</title>
+  <meta name="description" content="Profil, parcours et objectifs (BTS SIO)." />
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/profil.css">
+</head>
+
+<body>
+  <header>
+    <div><a href="../index.html">Nom Prénom</a></div>
+
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="profil.html" aria-current="page">Profil</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page profil">
+    <section class="hero">
+      <h1>Profil</h1>
+      <p>Étudiant BTS SIO — option à préciser. Présentation courte, sérieuse.</p>
+      <div class="actions">
+        <a class="btn" href="contact.html">Me contacter</a>
+        <a class="btn btn-ghost" href="projets.html">Voir mes projets</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>À propos</h2>
+      <p>Écris ici ton résumé (ce que tu fais, ce que tu aimes, ton objectif pro).</p>
+    </section>
+
+    <section class="grid-2">
+      <div class="card">
+        <h2>Parcours</h2>
+        <ul>
+          <li>2025–2026 : BTS SIO — option …</li>
+          <li>2024–2025 : …</li>
+          <li>…</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Objectifs</h2>
+        <ul>
+          <li>Objectif 1 (ex : alternance / stage / spécialisation)</li>
+          <li>Objectif 2</li>
+          <li>Objectif 3</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>CV</h2>
+      <p>Tu peux ajouter un lien vers ton CV (PDF) plus tard.</p>
+      <a class="btn" href="#">Télécharger mon CV</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nom Prénom — BTS SIO</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
