@@ -1,110 +1,98 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nom Prénom — BTS SIO</title>
-  <meta name="description" content="Site professionnel réalisé dans le cadre du BTS SIO." />
+  <meta name="description" content="Site professionnel réalisé dans le cadre du BTS SIO.">
 
   <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header>
-    <div>
-      <a href="index.html" class="brand">Nom Prénom</a>
+<header>
+  <div class="logo">
+    <a href="index.html">Nom Prénom</a>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" aria-current="page">Accueil</a></li>
+      <li><a href="pages/profil.html">Profil</a></li>
+      <li><a href="pages/competences.html">Compétences</a></li>
+      <li><a href="pages/projets.html">Projets</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h1>Nom Prénom</h1>
+    <p>Étudiant en BTS SIO — Option à préciser</p>
+
+    <div class="hero-buttons">
+      <a href="pages/projets.html" class="btn">Voir mes projets</a>
+      <a href="pages/contact.html" class="btn btn-outline">Me contacter</a>
     </div>
+  </section>
 
-    <nav aria-label="Navigation principale">
-      <ul>
-        <li><a href="index.html" aria-current="page">Accueil</a></li>
-        <li><a href="pages/profil.html">Profil</a></li>
-        <li><a href="pages/competences.html">Compétences</a></li>
-        <li><a href="pages/projets.html">Projets</a></li>
-        <li><a href="pages/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <section>
+    <h2>Présentation</h2>
+    <p>
+      Présente-toi ici : ton parcours, tes compétences, ton objectif professionnel.
+    </p>
+  </section>
 
-  <!-- ================= MAIN ================= -->
-  <main>
+  <section>
+    <h2>Compétences principales</h2>
+    <ul>
+      <li>Développement web</li>
+      <li>Systèmes et réseaux</li>
+      <li>Bases de données</li>
+      <li>Cybersécurité</li>
+    </ul>
+    <a href="pages/competences.html" class="link-action">Voir toutes mes compétences</a>
+  </section>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero">
-      <h1>Nom Prénom</h1>
-      <p>Étudiant en BTS SIO — Option à préciser</p>
+  <section>
+    <h2>Projets</h2>
 
-      <div class="hero-actions">
-        <a href="pages/projets.html" class="btn">Voir mes projets</a>
-        <a href="pages/contact.html" class="btn btn-ghost">Me contacter</a>
-      </div>
-    </section>
+    <a href="pages/projets.html" class="project-card">
+      <article>
+        <h3>Nom du projet</h3>
+        <p>Courte description du projet.</p>
+      </article>
+    </a>
 
-    <!-- ===== PRÉSENTATION ===== -->
-    <section>
-      <h2>Présentation</h2>
-      <p>
-        Présente-toi ici : ton parcours, ton intérêt pour l’informatique,
-        ton objectif professionnel, etc.
-      </p>
-    </section>
+    <a href="pages/projets.html" class="project-card">
+      <article>
+        <h3>Nom du projet</h3>
+        <p>Courte description du projet.</p>
+      </article>
+    </a>
 
-    <!-- ===== COMPÉTENCES (aperçu) ===== -->
-    <section>
-      <h2>Compétences principales</h2>
+    <a href="pages/projets.html" class="btn see-more">Voir tous les projets</a>
+  </section>
 
-      <ul>
-        <li>Développement web</li>
-        <li>Systèmes et réseaux</li>
-        <li>Bases de données</li>
-        <li>Cybersécurité</li>
-      </ul>
+  <section>
+    <h2>BTS SIO</h2>
+    <p>
+      Explique ici ce qu’est le BTS SIO et ton option (SISR ou SLAM).
+    </p>
+  </section>
 
-      <a href="pages/competences.html" class="link-cta">Voir toutes mes compétences</a>
-    </section>
+</main>
 
-    <!-- ===== PROJETS (aperçu) ===== -->
-    <section>
-      <h2>Projets</h2>
+<footer>
+  <p>© <span id="year"></span> Nom Prénom — BTS SIO</p>
+</footer>
 
-      <a href="pages/projets.html" class="project-card">
-        <article>
-          <h3>Nom du projet</h3>
-          <p>Courte description du projet.</p>
-        </article>
-      </a>
-
-      <a href="pages/projets.html" class="project-card">
-        <article>
-          <h3>Nom du projet</h3>
-          <p>Courte description du projet.</p>
-        </article>
-      </a>
-
-      <a href="pages/projets.html" class="see-more">Voir tous les projets</a>
-    </section>
-
-    <!-- ===== BTS SIO ===== -->
-    <section>
-      <h2>BTS SIO</h2>
-      <p>
-        Explique ici ce qu’est le BTS SIO, ton option (SISR ou SLAM)
-        et ce que tu y apprends.
-      </p>
-    </section>
-
-  </main>
-
-  <!-- ================= FOOTER ================= -->
-  <footer>
-    <p>© <span id="year"></span> Nom Prénom — BTS SIO</p>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
