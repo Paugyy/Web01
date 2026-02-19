@@ -1,53 +1,83 @@
-/* PROJETS */
+/* ===============================
+   Page Projets (spécifique)
+   Dépend de index.css (variables)
+================================ */
+
+/* Option : spacing un peu plus propre dans cette page */
+.page.projets {
+  display: grid;
+  gap: 18px;
+}
+
+/* Groupe de projets */
+.page.projets .project-group h2 {
+  margin-bottom: 10px;
+}
+
+/* Grille des cartes */
 .page.projets .projects-grid {
   display: grid;
   gap: 16px;
 }
 
-.page.projets .project-card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
+/* 2 colonnes sur écran large */
+@media (min-width: 900px) {
+  .page.projets .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
+/* Carte cliquable */
+.page.projets .project-card {
+  display: block;
+  text-decoration: none; /* anti-soulignement */
+  color: inherit;
+  height: 100%;
+}
+
+/* Carte visuelle */
 .page.projets .project-card article {
+  height: 100%;                /* même hauteur dans la grille */
+  display: flex;               /* permet de pousser la meta en bas */
+  flex-direction: column;
+  justify-content: space-between;
+
   background: rgba(248, 250, 252, 0.95);
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 18px;
+
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
   transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
 }
 
+/* Hover premium */
 .page.projets .project-card:hover article {
   transform: translateY(-3px);
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
   border-color: var(--accent);
 }
 
+/* Focus clavier (important) */
 .page.projets .project-card:focus-visible article {
-  outline: 3px solid var(--accent);
+  outline: 3px solid rgba(37, 99, 235, 0.35);
   outline-offset: 3px;
 }
 
+/* Meta */
 .page.projets .meta {
   list-style: none;
   padding: 0;
-  margin: 10px 0 0;
+  margin: 12px 0 0;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  color: var(--text-muted);
+  color: var(--muted);
   font-size: 14px;
 }
 
+/* Note */
 .page.projets .note {
   background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(238,242,255,0.75));
   border: 1px solid rgba(37, 99, 235, 0.20);
-}
-
-@media (min-width: 900px) {
-  .page.projets .projects-grid {
-    grid-template-columns: 1fr 1fr;
-  }
 }
